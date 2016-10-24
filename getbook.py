@@ -22,7 +22,7 @@ def getcontent(contenturl):
 # 执行查询语句，插入语句
 def adddata(title,content):
     active = "insert into books values('%s','%s')"%(title,content)
-    ms.ExecNonQuery(active) #调用test123.py模块中的MSSQL类的ExecNonQuery 方法
+    ms.ExecNonQuery(active) #调用sql_active.py模块中的MSSQL类的ExecNonQuery 方法
 
 for i in getlist():
     print("正在爬取%s"%i[1])
